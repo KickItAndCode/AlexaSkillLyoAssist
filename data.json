@@ -1,0 +1,162 @@
+[
+    {
+        "AREA": 1,
+        "EQUIPMENT_ID": "AU7201",
+        "EQUIPMENT_CLASS": "AUTOCLAVE",
+        "STATUS_VALUE": "In Use: Production",
+        "UNIT_PROCEDURE_ID": "AC Production Run UP",
+        "LAST_CHANGED_DATE": "2018-05-22T20:20:46.837Z",
+        "MAINTENANCE_VALUE": null,
+        "EIN": 19,
+        "CYCLE": "Primary Drying",
+        "PHASE": "Precondition 1",
+        "START_TIME": "2018-05-22T20:23:16.000Z",
+        "ELAPSED_TIME": 4335209,
+        "END_TIME": null,
+        "AVERAGE_TIME": 11575606.349206368,
+        "REMAINING_TIME": "10 Hours and 3 Minutes",
+        "NEXT_MAINTENANCE_DATE": "04/01/2018",
+        "ALARMS": [ 
+            {
+                "ALARM_NAME": "Temperature Alarm",
+                "ALARM_STATUS": "Critical",
+                "ALARM_ID": "AC1",
+                "ALARM_START_TIME": "2018-05-22T20:23:16.000Z",
+                "ALARM_END_TIME": "2018-05-22T20:23:16.000Z"
+            },
+            {
+                "ALARM_NAME": "Pressure Alarm",
+                "ALARM_STATUS": "Moderate",
+                "ALARM_ID": "AC1",
+                "ALARM_START_TIME": "2018-05-22T20:23:16.000Z",
+                "ALARM_END_TIME": "2018-05-22T20:23:16.000Z"
+            },
+            {
+                "ALARM_NAME": "Completion Alarm",
+                "ALARM_STATUS": "Minor",
+                "ALARM_ID": "AC1",
+                "ALARM_START_TIME": "2018-05-22T20:23:16.000Z",
+                "ALARM_END_TIME": "2018-05-22T20:23:16.000Z"
+            }
+        ],
+        "LEAK_TEST_RESULTS": "14 milliTorr’s per hour",
+        "LEAK_TEST_START": "2018-06-7"
+
+    },
+    {
+        "AREA": 1,
+        "EQUIPMENT_ID": "AU7303",
+        "EQUIPMENT_CLASS": "AUTOCLAVE",
+        "STATUS_VALUE": "Available",
+        "UNIT_PROCEDURE_ID": "AC Maintenance Run UP",
+        "LAST_CHANGED_DATE": "2018-05-22T09:42:09.247Z",
+        "MAINTENANCE_VALUE": null,
+        "EIN": 17,
+        "CYCLE": "Primary Drying",
+        "PHASE": "Cycle Completed",
+        "START_TIME": "2018-05-22T06:06:15.000Z",
+        "ELAPSED_TIME": 12714000,
+        "END_TIME": "2018-05-22T09:38:09.000Z",
+        "AVERAGE_TIME": 11529839.175257733,
+        "REMAINING_TIME": "56 Minutes",
+        "NEXT_MAINTENANCE_DATE": "06/01/2018",
+        "ALARMS": [             
+            {
+                "ALARM_NAME": "Pressure",
+                "ALARM_STATUS": "Moderate",
+                "ALARM_ID": "AC1",
+                "ALARM_START_TIME": "2018-05-22T20:23:16.000Z",
+                "ALARM_END_TIME": "2018-05-22T20:23:16.000Z"
+            },
+            {
+                "ALARM_NAME": "Temperature Alarm",
+                "ALARM_STATUS": "Critical",
+                "ALARM_ID": "AC1",
+                "ALARM_START_TIME": "2018-05-22T20:23:16.000Z",
+                "ALARM_END_TIME": "2018-05-22T20:23:16.000Z"
+            }
+        ],
+        "LEAK_TEST_RESULTS": "30 milliTorr’s per hour",
+        "LEAK_TEST_START": "2018-06-1"
+    },
+    {
+        "AREA": 2,
+        "EQUIPMENT_ID": "AU7304",
+        "EQUIPMENT_CLASS": "AUTOCLAVE",
+        "STATUS_VALUE": "In Use: Non-Production",
+        "UNIT_PROCEDURE_ID": "AC Non Production Run UP",
+        "LAST_CHANGED_DATE": "2018-05-22T16:52:56.965Z",
+        "MAINTENANCE_VALUE": null,
+        "EIN": 16,
+        "CYCLE": "Freezing",
+        "PHASE": "Cycle Completed",
+        "START_TIME": "2018-05-22T16:57:17.000Z",
+        "ELAPSED_TIME": 7203000,
+        "END_TIME": "2018-05-22T18:57:20.000Z",
+        "AVERAGE_TIME": 14411688.888888886,
+        "REMAINING_TIME": "1 Hours and 15 Minutes",
+        "NEXT_MAINTENANCE_DATE": "05/01/2018",
+        "ALARMS": [              
+            {
+                "ALARM_NAME": "Temperature Alarm",
+                "ALARM_STATUS": "Critical",
+                "ALARM_ID": "AC1",
+                "ALARM_START_TIME": "2018-05-22T20:23:16.000Z",
+                "ALARM_END_TIME": "2018-05-22T20:23:16.000Z"
+            }
+        ],
+        "LEAK_TEST_RESULTS": "10 milliTorr’s per hour",
+        "LEAK_TEST_START": "2018-05-29"
+    },
+    {
+        "AREA": 3,
+        "EQUIPMENT_ID": "WA7204",
+        "EQUIPMENT_CLASS": "PARTSWASHER",
+        "STATUS_VALUE": "Available",
+        "UNIT_PROCEDURE_ID": "PW Production Run UP",
+        "LAST_CHANGED_DATE": "2018-05-22T05:41:03.960Z",
+        "MAINTENANCE_VALUE": null,
+        "EIN": 15,
+        "CYCLE": "Secondary Drying",
+        "PHASE": "Recipe End",
+        "START_TIME": "2018-05-22T01:46:09.000Z",
+        "ELAPSED_TIME": 5920000,
+        "END_TIME": "2018-05-22T03:24:49.000Z",
+        "AVERAGE_TIME": 6342037.199124723,
+        "REMAINING_TIME": "3 Hours and 46 Minutes",
+        "NEXT_MAINTENANCE_DATE": "06/01/2018",
+        "ALARMS": [            
+            {
+                "ALARM_NAME": "Pressure Alarm",
+                "ALARM_STATUS": "Minor",
+                "ALARM_ID": "AC1",
+                "ALARM_START_TIME": "2018-05-22T20:23:16.000Z",
+                "ALARM_END_TIME": "2018-05-22T20:23:16.000Z"
+            }
+        ],
+        "LEAK_TEST_RESULTS": "5 milliTorr’s per hour",
+        "LEAK_TEST_START": "2018-06-7"
+    },
+    {
+        "AREA": 4,
+        "EQUIPMENT_ID": "WA7205",
+        "EQUIPMENT_CLASS": "PARTSWASHER",
+        "STATUS_VALUE": "Available",
+        "UNIT_PROCEDURE_ID": "PW Production Run UP",
+        "LAST_CHANGED_DATE": "2018-05-22T20:36:00.784Z",
+        "MAINTENANCE_VALUE": null,
+        "EIN": 14,
+        "CYCLE": "sterilization",
+        "PHASE": "Recipe End",
+        "START_TIME": "2018-05-22T15:04:02.000Z",
+        "ELAPSED_TIME": 3960000,
+        "END_TIME": "2018-05-22T16:10:02.000Z",
+        "AVERAGE_TIME": 3495820.75471698,
+        "REMAINING_TIME": "2 Hours and 19 Minutes",
+        "NEXT_MAINTENANCE_DATE": "06/01/2018",
+        "ALARMS": [],
+        "LEAK_TEST_RESULTS": "12 milliTorr’s per hour",
+        "LEAK_TEST_START": "2018-04-9"
+        
+    }
+]

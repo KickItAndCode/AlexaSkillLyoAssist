@@ -1,0 +1,572 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "laio assist",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel",
+                        "okay cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "what can you do",
+                        "please help",
+                        "help",
+                        "im confused"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "okay stop",
+                        "laio stop",
+                        "stop",
+                        "please stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.SearchAction<object@Event[eventStatus]>",
+                    "samples": []
+                },
+                {
+                    "name": "lyodataintent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{EIN} please",
+                                "laio {EIN} please",
+                                "I'd like laio {EIN}",
+                                "how about {EIN}",
+                                "laio {EIN}",
+                                "{EIN}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "load data for laio {EIN}",
+                        "data for laio {EIN}",
+                        "get data for laio {EIN}",
+                        "load data for {EIN}",
+                        "{EIN} data",
+                        "laio data for {EIN}",
+                        "data for {EIN}",
+                        "get data for {EIN} "
+                    ]
+                },
+                {
+                    "name": "CycleByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "cycle please",
+                        "cycle for {EIN}",
+                        "cycle information",
+                        "hear cycle",
+                        "get cycle ",
+                        "get cycle for {EIN}"
+                    ]
+                },
+                {
+                    "name": "StatusByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "status please",
+                        "get status for laio  {EIN}",
+                        "check status for {EIN}",
+                        "hear status for {EIN}",
+                        "hear status",
+                        "check status",
+                        "I want to check the status",
+                        "status ",
+                        "get status",
+                        "get status for {EIN}"
+                    ]
+                },
+                {
+                    "name": "PhaseByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "phase please",
+                        "get phase for laio {EIN}",
+                        "phase for laio {EIN}",
+                        "phase for {EIN}",
+                        "hear phase",
+                        "phase",
+                        "phase information",
+                        "get phase",
+                        "get phase for {EIN}"
+                    ]
+                },
+                {
+                    "name": "RemainingTimeByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "remaining time please",
+                        "time remaining for {EIN}",
+                        "time remaining ",
+                        "remaining time",
+                        "remaining time for {EIN}",
+                        "get remaining time",
+                        "get remaining time for {EIN}"
+                    ]
+                },
+                {
+                    "name": "NextMaintenanceDateByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "next maintenance date please",
+                        "maintenance date  for {EIN}",
+                        "maintenance date",
+                        "get next maintenance date",
+                        "get next maintenance date for {EIN}"
+                    ]
+                },
+                {
+                    "name": "AlarmsByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "alarms for laio {EIN}",
+                        "laio {EIN} alarms",
+                        "give me {EIN} alarms",
+                        "all {EIN} alarms",
+                        "alarms for {EIN}",
+                        "{EIN} alarms",
+                        "get alarms for {EIN}"
+                    ]
+                },
+                {
+                    "name": "AlarmsByStatusIntent",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "status"
+                        }
+                    ],
+                    "samples": [
+                        "what {status} are there",
+                        "give me {status} alarms",
+                        "are there any {status} alarms",
+                        "{status} alarms ",
+                        "get me all {status} alarms"
+                    ]
+                },
+                {
+                    "name": "AlarmsByAreaIntent",
+                    "slots": [
+                        {
+                            "name": "Area",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "are there any alarms in area {Area}",
+                        "are there any alarms active in area {Area}",
+                        " area {Area} alarms",
+                        "what alarm are active in area {Area}"
+                    ]
+                },
+                {
+                    "name": "AlarmsIntent",
+                    "slots": [],
+                    "samples": [
+                        "any alarms",
+                        "all laio alarms",
+                        "are there alarm in any area",
+                        "all alarms",
+                        "are there any alarms"
+                    ]
+                },
+                {
+                    "name": "LeakTestResultsByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "leak test results please",
+                        "results please",
+                        "results for {EIN}",
+                        "results",
+                        "results of leak test",
+                        "leak test results",
+                        "test results",
+                        "test results for {EIN}",
+                        "leak test results for {EIN}",
+                        "get leak test results for {EIN}"
+                    ]
+                },
+                {
+                    "name": "LastLeakTestDateByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "leak test date please",
+                        "date of last leak test for {EIN}",
+                        "date of leak test",
+                        "date of last leak test",
+                        "last leak test date",
+                        "leak test date",
+                        "last test date for {EIN}",
+                        "when was the last test performed {EIN}"
+                    ]
+                },
+                {
+                    "name": "SummaryByEINIntent",
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "read me the flash briefing for  {EIN}",
+                        "whats the flash briefing for {EIN}",
+                        "whats the flash briefing for laio {EIN}",
+                        "read me the flash briefing for laio {EIN}",
+                        "flash briefing for {EIN}",
+                        "summary for laio {EIN}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "YES_NO_SLOT",
+                    "values": [
+                        {
+                            "id": "TRUE",
+                            "name": {
+                                "value": "yes",
+                                "synonyms": [
+                                    "yep",
+                                    "yeah",
+                                    "I do",
+                                    "yes please",
+                                    "you know it"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FALSE",
+                            "name": {
+                                "value": "no",
+                                "synonyms": [
+                                    "nope",
+                                    "I do not",
+                                    "no thank you"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "values": [
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "Info",
+                                "synonyms": [
+                                    "general"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "Moderate",
+                                "synonyms": [
+                                    "mid"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "Critial",
+                                "synonyms": [
+                                    "Major"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "4",
+                            "name": {
+                                "value": "Minor",
+                                "synonyms": [
+                                    "Insignificant"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AlarmsByStatusIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "status",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "StatusByEINIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "CycleByEINIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "PhaseByEINIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "lyodataintent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "EIN",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1090388579591.351883368545"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.149102723841.1109047522992",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what status was that"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1084333766061.618639927764",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what laio would you like data for?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1084333766061.618639927764",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "So you want data for laio {EINN}"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.432381411143.526422379266",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "so data on {EIN}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "so you you'd like info on {EIN}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.432381411143.526422379266",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what laio would you like data for"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.619155169563.895691158721",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sure. which laio"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Okay. Which laio"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.619155169563.895691158721",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": " Okay, So Laio {EIN} right?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "You said laio {EIN} correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.680439986171.1033993868729",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Okay Which laio"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Sure. which laio"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.680439986171.1033993868729",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You said laio {EIN} correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Okay, So Laio {EIN} right?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.705791138712.192911179165",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You said laio {EIN} correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Okay, So Laio {EIN} right?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.705791138712.192911179165",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sure. which laio"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1090388579591.351883368545",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I can do that. Which laio would you like?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "okay which laio"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "sure which laio would you like information on"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "which laio would you like data about"
+                    }
+                ]
+            }
+        ]
+    }
+}
